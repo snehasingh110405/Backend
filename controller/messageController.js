@@ -9,7 +9,7 @@ export const sendMessage =async (req,res,next)=>{
     }    
     await Message.create({firstName , lastName , email , phone , message});
         res.status(200).json({
-            sucess: true,
+            success: true,
             message: "Message Send Successfully!",
      });
     
